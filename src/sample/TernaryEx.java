@@ -7,5 +7,7 @@ public class TernaryEx {
     int y;
     y = (x == 1) ? 10 : 20;
     System.out.println("y = " + y);
+    
+    //test 기입
   }
 }
