@@ -1,6 +1,6 @@
 package method;
 
-public class MethodEx {
+public class Method1Ex {
   public static void main(String[] args) {
 
 //    //메서드를 이용하지 않은 합 예제
@@ -55,7 +55,7 @@ public class MethodEx {
     //메서드 호출 (명령하는 것)
     System.out.printf("sum(1~10) = %d\n", sum(1, 10L));
     System.out.printf("sum(10~100) = %d\n", sum(10, 100L));
-    System.out.printf("sum(100~1000) = %d\n", sum(1_000_000_000, 2_000_000_000));
+    System.out.printf("sum(100~1000) = %d\n", sum(100,1000));
 
 
   }//main
