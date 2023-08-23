@@ -3,7 +3,8 @@ package challengeCh9;
 public class Chatting {
   class Chat {
     void start() {}
-
+    // 이것이 자바다 교재 404 page 참고
+    // 로컬변수를 로컬클래스에서
     void sendMessage(String message) {}
   }
 
@@ -24,5 +25,5 @@ public class Chatting {
 
      chat.start();
   }
-}
+}//365800
 
