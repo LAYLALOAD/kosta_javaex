@@ -21,8 +21,13 @@ public class GenericClass1Demo {
     }
 
     c.setBeverage(new Beer());
+    Boricha bori = (Boricha)c.getBeverage();
+    bori.drink();
+
     c.setBeverage(new Beverage());
-    c.setBeverage(new Object());
+    Boricha bev = (Boricha) c.getBeverage();
+    //c.setBeverage(new Object());
+    //beer = (Beer) c.getBeverage();
 
     Cup<Boricha> borichaCup = new Cup();
     borichaCup.setBeverage(new Boricha());
@@ -37,9 +42,17 @@ public class GenericClass1Demo {
 }
 
 class Beverage {}
-class Boricha extends Beverage {}
-class Beer extends Beverage {}
-class Cup<T> {
+class Boricha extends Beverage {
+  void drink() {
+    System.out.println("어린아이만 마실 수 있다.");
+  }
+}
+class Beer extends Beverage {
+  void cheers() {
+    System.out.println("어른만 마실 수 있다.");
+  }
+}
+class Cup<T extends Beverage> {
   private T beverage;
 
   public T getBeverage() {
